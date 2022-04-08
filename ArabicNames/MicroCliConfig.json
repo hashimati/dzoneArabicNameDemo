@@ -1,0 +1,212 @@
+{
+  "projectInfo": {
+    "applicationType": "default",
+    "defaultPackage": "io.hashimati.dzone",
+    "testFramework": "junit",
+    "sourceLanguage": "java",
+    "buildTool": "gradle",
+    "features": [
+      "annotation-api",
+      "app-name",
+      "gradle",
+      "http-client",
+      "jackson-databind",
+      "java",
+      "java-application",
+      "junit",
+      "logback",
+      "micronaut-build",
+      "netty-server",
+      "readme",
+      "shade",
+      "yaml",
+      "data-jdbc",
+      "h2",
+      "liquibase",
+      "management",
+      "micrometer",
+      "tracing-jaeger",
+      "graphql",
+      "openapi",
+      "lombok"
+    ]
+  },
+  "liquibaseSequence": 1,
+  "appName": "ArabicNames",
+  "databaseName": "ArabicNames",
+  "databaseType": "H2",
+  "dataBackendRun": "JDBC",
+  "dataMigrationTool": "liquibase",
+  "messaging": "none",
+  "graphQLIntegrationLib": "graphql-java-tools",
+  "jaxRs": false,
+  "port": 8080,
+  "graphQlSupport": true,
+  "reactiveFramework": "reactor",
+  "micrometer": true,
+  "influx": false,
+  "prometheus": false,
+  "graphite": false,
+  "statsd": false,
+  "caffeine": false,
+  "gorm": false,
+  "securityEnable": false,
+  "securityStrategy": "none",
+  "tracingFramework": "tracing-jaeger",
+  "tracingEnabled": true,
+  "mnData": true,
+  "javaVersion": "11",
+  "entities": [
+    {
+      "name": "ArabicName",
+      "entityPackage": "io.hashimati.dzone.domains",
+      "repoPackage": "io.hashimati.dzone.repositories",
+      "servicePackage": "io.hashimati.dzone.services",
+      "restPackage": "io.hashimati.dzone.controllers",
+      "clientPackage": "io.hashimati.dzone.clients",
+      "graphqlpackage": "io.hashimati.dzone.graphqls",
+      "functionPackage": "io.hashimati.dzone.function",
+      "lambdaPackage": "io.hashimati.dzone.function.aws",
+      "oraclePackage": "io.hashimati.dzone.function.oracle",
+      "azurePackage": "io.hashimati.dzone.function.azure",
+      "googlePackage": "io.hashimati.dzone.function.google",
+      "reactiveFramework": "reactor",
+      "databaseType": "H2",
+      "collectionName": "arabicnames",
+      "databaseName": "ArabicNames",
+      "gorm": false,
+      "frameworkType": "JDBC",
+      "jaxRs": false,
+      "attributes": [
+        {
+          "name": "name",
+          "type": "String",
+          "premetive": true,
+          "enumuration": false,
+          "array": false,
+          "jdbc": false,
+          "jpa": false,
+          "findByMethod": true,
+          "findAllMethod": false
+        },
+        {
+          "name": "letter",
+          "type": "String",
+          "premetive": true,
+          "enumuration": false,
+          "array": false,
+          "jdbc": false,
+          "jpa": false,
+          "findByMethod": false,
+          "findAllMethod": true
+        },
+        {
+          "name": "nativeArabic",
+          "type": "String",
+          "premetive": true,
+          "enumuration": false,
+          "array": false,
+          "jdbc": false,
+          "jpa": false,
+          "findByMethod": true,
+          "findAllMethod": false
+        },
+        {
+          "name": "meaning",
+          "type": "String",
+          "premetive": true,
+          "enumuration": false,
+          "array": false,
+          "jdbc": false,
+          "jpa": false,
+          "findByMethod": false,
+          "findAllMethod": false
+        }
+      ],
+      "liquibaseSequence": 1,
+      "mnData": true,
+      "cached": false,
+      "micrometer": true,
+      "tracingEnabled": true,
+      "securityEnabled": false,
+      "securityStrategy": "none",
+      "noEndpoints": false,
+      "javaVersion": "11",
+      "javaRecord": false,
+      "updateByMethods": {},
+      "urls": [
+        {
+          "url": "/api/v1/arabicName/get",
+          "method": "GET",
+          "roles": []
+        },
+        {
+          "url": "/api/v1/arabicName/findAll",
+          "method": "GET",
+          "roles": []
+        },
+        {
+          "url": "/api/v1/arabicName/save",
+          "method": "POST",
+          "roles": []
+        },
+        {
+          "url": "/api/v1/arabicName/update",
+          "method": "PUT",
+          "roles": []
+        },
+        {
+          "url": "/api/v1/arabicName/delete/{id}",
+          "method": "DELETE",
+          "roles": []
+        },
+        {
+          "url": "/api/v1/arabicName/findByName",
+          "method": "DELETE",
+          "roles": []
+        },
+        {
+          "url": "/api/v1/arabicName/findAllByLetter",
+          "method": "DELETE",
+          "roles": []
+        },
+        {
+          "url": "/api/v1/arabicName/findByNativeArabic",
+          "method": "DELETE",
+          "roles": []
+        }
+      ],
+      "graphQl": true
+    }
+  ],
+  "relations": [],
+  "enums": [],
+  "configured": true,
+  "securityRoles": [],
+  "urls": [
+    {
+      "scope": "/GraphQL",
+      "url": "/graphql",
+      "method": "POST",
+      "roles": []
+    },
+    {
+      "scope": "/GraphQL",
+      "url": "/graphiql",
+      "method": "GET",
+      "roles": []
+    },
+    {
+      "scope": "/OpenAPI",
+      "url": "/swagger/views/swagger-ui/index.html",
+      "method": "GET",
+      "roles": []
+    },
+    {
+      "scope": "/OpenAPI",
+      "url": "/swagger/views/rapidoc/index.html",
+      "method": "GET",
+      "roles": []
+    }
+  ]
+}

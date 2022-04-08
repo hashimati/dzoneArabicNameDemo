@@ -1,0 +1,152 @@
+16:20:16.986 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test]
+16:20:17.535 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:20:17.923 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:20:20.999 [Test worker] DEBUG io.micronaut.data.query - Dropping Table: 
+DROP TABLE `arabicnames`
+16:20:21.019 [Test worker] DEBUG io.micronaut.data.query - Executing CREATE statement: 
+CREATE TABLE `arabicnames` (`id` BIGINT AUTO_INCREMENT PRIMARY KEY,`name` VARCHAR(255) NOT NULL,`letter` VARCHAR(255) NOT NULL,`nativeArabic` VARCHAR(255) NOT NULL,`meaning` VARCHAR(255) NOT NULL,`dateCreated` DATE,`dateUpdated` DATE);
+16:20:24.901 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:20:24.909 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:20:25.444 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test]
+16:20:25.512 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+16:20:25.520 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+16:20:25.704 [Test worker] DEBUG io.micronaut.data.query - Dropping Table: 
+DROP TABLE `arabicnames`
+16:20:25.708 [Test worker] DEBUG io.micronaut.data.query - Executing CREATE statement: 
+CREATE TABLE `arabicnames` (`id` BIGINT AUTO_INCREMENT PRIMARY KEY,`name` VARCHAR(255) NOT NULL,`letter` VARCHAR(255) NOT NULL,`nativeArabic` VARCHAR(255) NOT NULL,`meaning` VARCHAR(255) NOT NULL,`dateCreated` DATE,`dateUpdated` DATE);
+16:20:27.485 [default-nioEventLoopGroup-3-3] INFO  i.h.d.c.ArabicNameController - Saving  ArabicName : ArabicName(id=null, name=Test27, letter=Test37, nativeArabic=Test17, meaning=Test25, dateCreated=null, dateUpdated=null)
+16:20:27.497 [default-nioEventLoopGroup-3-3] INFO  i.h.dzone.services.ArabicNameService - Saving  ArabicName : ArabicName(id=null, name=Test27, letter=Test37, nativeArabic=Test17, meaning=Test25, dateCreated=null, dateUpdated=null)
+16:20:27.673 [default-nioEventLoopGroup-3-3] DEBUG io.micronaut.data.query - Executing SQL query: INSERT INTO `arabicnames` (`name`,`letter`,`nativeArabic`,`meaning`,`dateCreated`,`dateUpdated`) VALUES (?,?,?,?,?,?)
+16:20:27.673 [default-nioEventLoopGroup-3-3] TRACE io.micronaut.data.query - Binding parameter at position 1 to value Test27 with data type: STRING
+16:20:27.677 [default-nioEventLoopGroup-3-3] TRACE io.micronaut.data.query - Binding parameter at position 2 to value Test37 with data type: STRING
+16:20:27.677 [default-nioEventLoopGroup-3-3] TRACE io.micronaut.data.query - Binding parameter at position 3 to value Test17 with data type: STRING
+16:20:27.677 [default-nioEventLoopGroup-3-3] TRACE io.micronaut.data.query - Binding parameter at position 4 to value Test25 with data type: STRING
+16:20:27.677 [default-nioEventLoopGroup-3-3] TRACE io.micronaut.data.query - Binding parameter at position 5 to value Fri Apr 08 16:20:27 AST 2022 with data type: DATE
+16:20:27.697 [default-nioEventLoopGroup-3-3] TRACE io.micronaut.data.query - Binding parameter at position 6 to value Fri Apr 08 16:20:27 AST 2022 with data type: DATE
+16:20:27.990 [default-nioEventLoopGroup-3-5] INFO  i.h.d.c.ArabicNameController - find All
+16:20:27.994 [default-nioEventLoopGroup-3-5] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:20:28.006 [default-nioEventLoopGroup-3-5] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:20:28.506 [default-nioEventLoopGroup-3-7] INFO  i.h.d.c.ArabicNameController - Saving  ArabicName : ArabicName(id=null, name=Test14, letter=Test57, nativeArabic=Test86, meaning=Test18, dateCreated=null, dateUpdated=null)
+16:20:28.506 [default-nioEventLoopGroup-3-7] INFO  i.h.dzone.services.ArabicNameService - Saving  ArabicName : ArabicName(id=null, name=Test14, letter=Test57, nativeArabic=Test86, meaning=Test18, dateCreated=null, dateUpdated=null)
+16:20:28.510 [default-nioEventLoopGroup-3-7] DEBUG io.micronaut.data.query - Executing SQL query: INSERT INTO `arabicnames` (`name`,`letter`,`nativeArabic`,`meaning`,`dateCreated`,`dateUpdated`) VALUES (?,?,?,?,?,?)
+16:20:28.510 [default-nioEventLoopGroup-3-7] TRACE io.micronaut.data.query - Binding parameter at position 1 to value Test14 with data type: STRING
+16:20:28.514 [default-nioEventLoopGroup-3-7] TRACE io.micronaut.data.query - Binding parameter at position 2 to value Test57 with data type: STRING
+16:20:28.514 [default-nioEventLoopGroup-3-7] TRACE io.micronaut.data.query - Binding parameter at position 3 to value Test86 with data type: STRING
+16:20:28.514 [default-nioEventLoopGroup-3-7] TRACE io.micronaut.data.query - Binding parameter at position 4 to value Test18 with data type: STRING
+16:20:28.514 [default-nioEventLoopGroup-3-7] TRACE io.micronaut.data.query - Binding parameter at position 5 to value Fri Apr 08 16:20:28 AST 2022 with data type: DATE
+16:20:28.518 [default-nioEventLoopGroup-3-7] TRACE io.micronaut.data.query - Binding parameter at position 6 to value Fri Apr 08 16:20:28 AST 2022 with data type: DATE
+16:20:28.550 [default-nioEventLoopGroup-3-9] INFO  i.h.d.c.ArabicNameController - update ArabicName(id=2, name=Test14, letter=Test57, nativeArabic=Test86, meaning=Test18, dateCreated=Fri Apr 08 16:20:28 AST 2022, dateUpdated=Fri Apr 08 16:20:28 AST 2022)
+16:20:28.554 [default-nioEventLoopGroup-3-9] INFO  i.h.dzone.services.ArabicNameService - update ArabicName(id=2, name=Test14, letter=Test57, nativeArabic=Test86, meaning=Test18, dateCreated=Fri Apr 08 16:20:28 AST 2022, dateUpdated=Fri Apr 08 16:20:28 AST 2022)
+16:20:28.566 [default-nioEventLoopGroup-3-9] DEBUG io.micronaut.data.query - Executing SQL query: UPDATE `arabicnames` SET `name`=?,`letter`=?,`nativeArabic`=?,`meaning`=?,`dateUpdated`=? WHERE (`id` = ?)
+16:20:28.570 [default-nioEventLoopGroup-3-9] TRACE io.micronaut.data.query - Binding parameter at position 1 to value Test14 with data type: STRING
+16:20:28.570 [default-nioEventLoopGroup-3-9] TRACE io.micronaut.data.query - Binding parameter at position 2 to value Test57 with data type: STRING
+16:20:28.570 [default-nioEventLoopGroup-3-9] TRACE io.micronaut.data.query - Binding parameter at position 3 to value Test86 with data type: STRING
+16:20:28.570 [default-nioEventLoopGroup-3-9] TRACE io.micronaut.data.query - Binding parameter at position 4 to value Test18 with data type: STRING
+16:20:28.574 [default-nioEventLoopGroup-3-9] TRACE io.micronaut.data.query - Binding parameter at position 5 to value Fri Apr 08 16:20:28 AST 2022 with data type: DATE
+16:20:28.574 [default-nioEventLoopGroup-3-9] TRACE io.micronaut.data.query - Binding parameter at position 6 to value 2 with data type: LONG
+16:20:29.066 [default-nioEventLoopGroup-3-11] INFO  i.h.d.c.ArabicNameController - Saving  ArabicName : ArabicName(id=null, name=Test78, letter=Test63, nativeArabic=Test53, meaning=Test97, dateCreated=null, dateUpdated=null)
+16:20:29.070 [default-nioEventLoopGroup-3-11] INFO  i.h.dzone.services.ArabicNameService - Saving  ArabicName : ArabicName(id=null, name=Test78, letter=Test63, nativeArabic=Test53, meaning=Test97, dateCreated=null, dateUpdated=null)
+16:20:29.070 [default-nioEventLoopGroup-3-11] DEBUG io.micronaut.data.query - Executing SQL query: INSERT INTO `arabicnames` (`name`,`letter`,`nativeArabic`,`meaning`,`dateCreated`,`dateUpdated`) VALUES (?,?,?,?,?,?)
+16:20:29.070 [default-nioEventLoopGroup-3-11] TRACE io.micronaut.data.query - Binding parameter at position 1 to value Test78 with data type: STRING
+16:20:29.070 [default-nioEventLoopGroup-3-11] TRACE io.micronaut.data.query - Binding parameter at position 2 to value Test63 with data type: STRING
+16:20:29.070 [default-nioEventLoopGroup-3-11] TRACE io.micronaut.data.query - Binding parameter at position 3 to value Test53 with data type: STRING
+16:20:29.070 [default-nioEventLoopGroup-3-11] TRACE io.micronaut.data.query - Binding parameter at position 4 to value Test97 with data type: STRING
+16:20:29.074 [default-nioEventLoopGroup-3-11] TRACE io.micronaut.data.query - Binding parameter at position 5 to value Fri Apr 08 16:20:29 AST 2022 with data type: DATE
+16:20:29.074 [default-nioEventLoopGroup-3-11] TRACE io.micronaut.data.query - Binding parameter at position 6 to value Fri Apr 08 16:20:29 AST 2022 with data type: DATE
+16:20:29.111 [default-nioEventLoopGroup-3-13] INFO  i.h.dzone.services.ArabicNameService - Finding ArabicName By Id: 3
+16:20:29.115 [default-nioEventLoopGroup-3-13] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_ WHERE (arabic_name_.`id` = ?)
+16:20:29.119 [default-nioEventLoopGroup-3-13] TRACE io.micronaut.data.query - Binding parameter at position 1 to value 3 with data type: LONG
+16:20:29.619 [default-nioEventLoopGroup-3-15] INFO  i.h.d.c.ArabicNameController - Saving  ArabicName : ArabicName(id=null, name=Test20, letter=Test90, nativeArabic=Test56, meaning=Test79, dateCreated=null, dateUpdated=null)
+16:20:29.619 [default-nioEventLoopGroup-3-15] INFO  i.h.dzone.services.ArabicNameService - Saving  ArabicName : ArabicName(id=null, name=Test20, letter=Test90, nativeArabic=Test56, meaning=Test79, dateCreated=null, dateUpdated=null)
+16:20:29.623 [default-nioEventLoopGroup-3-15] DEBUG io.micronaut.data.query - Executing SQL query: INSERT INTO `arabicnames` (`name`,`letter`,`nativeArabic`,`meaning`,`dateCreated`,`dateUpdated`) VALUES (?,?,?,?,?,?)
+16:20:29.623 [default-nioEventLoopGroup-3-15] TRACE io.micronaut.data.query - Binding parameter at position 1 to value Test20 with data type: STRING
+16:20:29.623 [default-nioEventLoopGroup-3-15] TRACE io.micronaut.data.query - Binding parameter at position 2 to value Test90 with data type: STRING
+16:20:29.623 [default-nioEventLoopGroup-3-15] TRACE io.micronaut.data.query - Binding parameter at position 3 to value Test56 with data type: STRING
+16:20:29.623 [default-nioEventLoopGroup-3-15] TRACE io.micronaut.data.query - Binding parameter at position 4 to value Test79 with data type: STRING
+16:20:29.623 [default-nioEventLoopGroup-3-15] TRACE io.micronaut.data.query - Binding parameter at position 5 to value Fri Apr 08 16:20:29 AST 2022 with data type: DATE
+16:20:29.623 [default-nioEventLoopGroup-3-15] TRACE io.micronaut.data.query - Binding parameter at position 6 to value Fri Apr 08 16:20:29 AST 2022 with data type: DATE
+16:20:30.113 [default-nioEventLoopGroup-3-17] INFO  i.h.d.c.ArabicNameController - Saving  ArabicName : ArabicName(id=null, name=Test8, letter=Test62, nativeArabic=Test3, meaning=Test63, dateCreated=null, dateUpdated=null)
+16:20:30.117 [default-nioEventLoopGroup-3-17] INFO  i.h.dzone.services.ArabicNameService - Saving  ArabicName : ArabicName(id=null, name=Test8, letter=Test62, nativeArabic=Test3, meaning=Test63, dateCreated=null, dateUpdated=null)
+16:20:30.117 [default-nioEventLoopGroup-3-17] DEBUG io.micronaut.data.query - Executing SQL query: INSERT INTO `arabicnames` (`name`,`letter`,`nativeArabic`,`meaning`,`dateCreated`,`dateUpdated`) VALUES (?,?,?,?,?,?)
+16:20:30.117 [default-nioEventLoopGroup-3-17] TRACE io.micronaut.data.query - Binding parameter at position 1 to value Test8 with data type: STRING
+16:20:30.117 [default-nioEventLoopGroup-3-17] TRACE io.micronaut.data.query - Binding parameter at position 2 to value Test62 with data type: STRING
+16:20:30.117 [default-nioEventLoopGroup-3-17] TRACE io.micronaut.data.query - Binding parameter at position 3 to value Test3 with data type: STRING
+16:20:30.117 [default-nioEventLoopGroup-3-17] TRACE io.micronaut.data.query - Binding parameter at position 4 to value Test63 with data type: STRING
+16:20:30.121 [default-nioEventLoopGroup-3-17] TRACE io.micronaut.data.query - Binding parameter at position 5 to value Fri Apr 08 16:20:30 AST 2022 with data type: DATE
+16:20:30.121 [default-nioEventLoopGroup-3-17] TRACE io.micronaut.data.query - Binding parameter at position 6 to value Fri Apr 08 16:20:30 AST 2022 with data type: DATE
+16:20:30.145 [default-nioEventLoopGroup-3-3] INFO  i.h.d.c.ArabicNameController - Deleting ArabicName by Id: 5
+16:20:30.149 [default-nioEventLoopGroup-3-3] INFO  i.h.dzone.services.ArabicNameService - Deleting ArabicName by Id: 5
+16:20:30.153 [default-nioEventLoopGroup-3-3] DEBUG io.micronaut.data.query - Executing Query: DELETE  FROM `arabicnames`  WHERE (`id` = ?)
+16:20:30.157 [default-nioEventLoopGroup-3-3] TRACE io.micronaut.data.query - Binding parameter at position 1 to value 5 with data type: LONG
+16:20:30.158 [default-nioEventLoopGroup-3-3] TRACE io.micronaut.data.query - Update operation updated 1 records
+16:20:30.159 [default-nioEventLoopGroup-3-3] INFO  i.h.dzone.services.ArabicNameService - Deleted ArabicName by Id: 5
+16:20:30.258 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+16:20:30.262 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+16:22:43.701 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:22:44.157 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:22:46.581 [main] DEBUG io.micronaut.data.query - Dropping Table: 
+DROP TABLE `arabicnames`
+16:22:46.597 [main] DEBUG io.micronaut.data.query - Executing CREATE statement: 
+CREATE TABLE `arabicnames` (`id` BIGINT AUTO_INCREMENT PRIMARY KEY,`name` VARCHAR(255) NOT NULL,`letter` VARCHAR(255) NOT NULL,`nativeArabic` VARCHAR(255) NOT NULL,`meaning` VARCHAR(255) NOT NULL,`dateCreated` DATE,`dateUpdated` DATE);
+16:22:50.383 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 14533ms. Server Running: http://localhost:8080
+16:47:47.956 [default-nioEventLoopGroup-1-6] WARN  notprivacysafe.graphql.GraphQL - Query failed to parse : 'query{
+  findArabicNameByName({
+    name:"Abbas"
+  })
+}'
+16:48:27.511 [default-nioEventLoopGroup-1-6] WARN  notprivacysafe.graphql.GraphQL - Query failed to parse : 'query{
+  findAllArabicName(){
+    name, 
+    letter, 
+    nativeArabic, 
+    meaning
+  }
+}'
+16:48:42.995 [default-nioEventLoopGroup-1-6] WARN  notprivacysafe.graphql.GraphQL - Query failed to parse : 'query{
+  findAllArabicName(){
+    name, 
+    letter, 
+    nativeArabic, 
+    meaning
+  }
+'
+16:49:16.577 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:16.764 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:20.270 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:20.270 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:21.050 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:21.050 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:21.218 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:21.218 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:21.416 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:21.420 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:21.602 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:21.602 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:21.778 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:21.778 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:21.988 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:21.992 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:22.158 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:22.158 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:22.321 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:22.321 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:22.529 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:22.529 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:22.717 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:22.717 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:22.895 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:22.895 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:23.120 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:23.123 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+16:49:43.940 [default-nioEventLoopGroup-1-6] INFO  i.h.d.c.ArabicNameController - Saving  ArabicName : ArabicName(id=null, name=Abbas, letter=A, nativeArabic=ÚÈÇÓ, meaning=Another name for a lion. The lion that the lions flee from, dateCreated=null, dateUpdated=null)
+16:49:43.944 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Saving  ArabicName : ArabicName(id=null, name=Abbas, letter=A, nativeArabic=ÚÈÇÓ, meaning=Another name for a lion. The lion that the lions flee from, dateCreated=null, dateUpdated=null)
+16:49:43.976 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing SQL query: INSERT INTO `arabicnames` (`name`,`letter`,`nativeArabic`,`meaning`,`dateCreated`,`dateUpdated`) VALUES (?,?,?,?,?,?)
+16:49:43.976 [default-nioEventLoopGroup-1-6] TRACE io.micronaut.data.query - Binding parameter at position 1 to value Abbas with data type: STRING
+16:49:43.976 [default-nioEventLoopGroup-1-6] TRACE io.micronaut.data.query - Binding parameter at position 2 to value A with data type: STRING
+16:49:43.976 [default-nioEventLoopGroup-1-6] TRACE io.micronaut.data.query - Binding parameter at position 3 to value ÚÈÇÓ with data type: STRING
+16:49:43.976 [default-nioEventLoopGroup-1-6] TRACE io.micronaut.data.query - Binding parameter at position 4 to value Another name for a lion. The lion that the lions flee from with data type: STRING
+16:49:43.976 [default-nioEventLoopGroup-1-6] TRACE io.micronaut.data.query - Binding parameter at position 5 to value Fri Apr 08 16:49:43 AST 2022 with data type: DATE
+16:49:43.996 [default-nioEventLoopGroup-1-6] TRACE io.micronaut.data.query - Binding parameter at position 6 to value Fri Apr 08 16:49:43 AST 2022 with data type: DATE
+16:49:53.346 [default-nioEventLoopGroup-1-6] INFO  i.h.dzone.services.ArabicNameService - Find All
+16:49:53.346 [default-nioEventLoopGroup-1-6] DEBUG io.micronaut.data.query - Executing Query: SELECT arabic_name_.`id`,arabic_name_.`name`,arabic_name_.`letter`,arabic_name_.`nativeArabic`,arabic_name_.`meaning`,arabic_name_.`dateCreated`,arabic_name_.`dateUpdated` FROM `arabicnames` arabic_name_
+23:53:33.411 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h45m20s290ms220µs).

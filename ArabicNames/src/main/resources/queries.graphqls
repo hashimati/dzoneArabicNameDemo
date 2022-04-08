@@ -1,0 +1,23 @@
+type Query{
+    
+    # ArabicName
+    findArabicNameById(id:Int):ArabicName!
+    findAllArabicName:[ArabicName]!
+
+    findArabicNameByName(input:String):ArabicName!
+
+    findArabicNameByNativeArabic(input:String):ArabicName!
+
+    findAllArabicNameByLetter(input:String):[ArabicName]!
+
+}
+
+type Mutation {
+    
+    # ArabicName
+    saveArabicName(arabicname : ArabicNameInput):ArabicName
+    updateArabicName(arabicname : ArabicNameInput):ArabicName
+    deleteArabicName(id : Int):Boolean
+
+}
+
